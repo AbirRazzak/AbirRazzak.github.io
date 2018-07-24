@@ -1,1 +1,3 @@
 # AnimNations.github.io
+
+This is my temp website while I set things up with my personal domain. Perhaps I'll map the DNS to GitHub pages and add a custom Domain to mask this page? Maybe... we'll see...
