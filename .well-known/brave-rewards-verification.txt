@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: abirrazzak.com
+Token: 7a68534bdf2fc18003f0fe24be5d4f3a0a541b7d0134b15d2249054a262f1df1
