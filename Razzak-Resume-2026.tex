@@ -1,0 +1,147 @@
+\documentclass[11pt,letterpaper]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{fontenc}
+
+% Remove page numbers
+\pagestyle{empty}
+
+% Section formatting
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing*{\section}{0pt}{10pt}{6pt}
+
+% Subsection formatting
+\titleformat{\subsection}[runin]{\bfseries}{}{0em}{}
+\titlespacing*{\subsection}{0pt}{6pt}{4pt}
+
+% Tight lists
+\setlist[itemize]{nosep, leftmargin=1.5em, topsep=2pt}
+
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+    {\LARGE\bfseries Abir Razzak} \\[4pt]
+        Reston, Virginia \quad $\mid$ \quad
+            \href{https://www.linkedin.com/in/abirrazzak}{linkedin.com/in/abirrazzak} \quad $\mid$ \quad
+                \href{https://github.com/abirrazzak}{github.com/abirrazzak}
+                \end{center}
+
+                % ---------- SUMMARY ----------
+                \section{Summary}
+                Senior Backend Software Engineer with 5+ years of experience designing and maintaining scalable API platforms and data pipelines in healthcare and benefits technology. Proven record of owning cross-functional projects end-to-end as Directly Responsible Individual (DRI), driving system integrations across acquired platforms, and leading backend initiatives through organizational change. Skilled in spec-driven development, backlog management, and collaborating across engineering, data science, and product teams.
+
+                % ---------- SKILLS ----------
+                \section{Technical Skills}
+                \begin{tabular}{@{} l l}
+                \textbf{Languages:} & Python, Ruby, Golang, Scala, TypeScript, JavaScript, SQL, C\# \\
+                \textbf{Frameworks:} & FastAPI, Flask, Ruby on Rails, Django, ASP.NET, React \\
+                \textbf{Infrastructure:} & AWS (EMR, Lambda/Serverless), CircleCI, CI/CD, Docker \\
+                \textbf{Data \& APIs:} & REST API Design, GraphQL, gRPC, SQLAlchemy, MySQL, PostgreSQL, Spark \\
+                \textbf{Observability:} & Datadog, Logging \& Monitoring, Postman, Mypy \\
+                \textbf{Practices:} & Spec-Driven Development, Agile/Scrum, JIRA Roadmapping, Project Management \\
+                \end{tabular}
+
+                % ---------- EXPERIENCE ----------
+                \section{Professional Experience}
+
+                % --- Jellyvision ---
+                \textbf{\large Jellyvision} \hfill Remote \\
+                \textit{2 years 9 months total tenure}
+
+                \vspace{4pt}
+                \textbf{Senior Software Engineer --- Platform Services} \hfill Jul 2025 -- Present
+                \begin{itemize}
+                    \item Developing the next-generation ALEX Benefits Platform using Python and FastAPI, serving enterprise HR customers.
+                        \item Collaborating with cross-functional teams to define API contracts and service boundaries using spec-driven development.
+                        \end{itemize}
+
+                        \vspace{4pt}
+                        \textbf{Senior Software Engineer I --- Platform} \hfill Jan 2025 -- Jul 2025
+                        \begin{itemize}
+                            \item Maintained and enhanced public-facing and internal APIs in Python (Flask) and Ruby on Rails, supporting customer integrations and internal tooling.
+                                \item Improved CI/CD pipelines, observability, and serverless infrastructure to increase platform reliability.
+                                    \item Drove feature additions based on customer feedback from the open enrollment cycle.
+                                    \end{itemize}
+
+                                    \vspace{4pt}
+                                    \textbf{Software Engineer II --- Platform} \hfill Nov 2023 -- Jan 2025
+                                    \begin{itemize}
+                                        \item Led enhancement of API services based on direct customer feedback, improving data accuracy and integration flexibility.
+                                            \item Unified engineering processes and codebases after organizational restructuring merged two backend teams.
+                                                \item Owned services across four language ecosystems (Ruby, Python, TypeScript, NodeJS), demonstrating breadth and adaptability.
+                                                \end{itemize}
+
+                                                \vspace{4pt}
+                                                \textbf{Software Engineer II --- Picwell Platform} \hfill Aug 2023 -- Nov 2023
+                                                \begin{itemize}
+                                                    \item Drove the final phase of cross-platform integration between Picwell and Jellyvision systems post-acquisition.
+                                                        \item Contributed to organizational planning as both platform teams merged into a single engineering unit.
+                                                        \end{itemize}
+
+                                                        \vspace{4pt}
+                                                        \textbf{Software Engineer Contractor --- Picwell Platform} \hfill Jun 2023 -- Aug 2023
+                                                        \begin{itemize}
+                                                            \item Designed and built a compatibility layer for the Picwell Commercial API (Python/Flask, SQLAlchemy, MySQL) to process customer data from ALEX Benefits Counselor.
+                                                                \item Streamlined integration of ALEX Go within ALEX Benefits Counselor on a tight deadline ahead of 2023 Open Enrollment.
+                                                                \end{itemize}
+
+                                                                \vspace{6pt}
+
+                                                                % --- Phrase Health ---
+                                                                \textbf{\large Phrase Health} \hfill Remote \\
+                                                                \textbf{Software Engineer} \hfill Oct 2022 -- Jun 2023
+                                                                \begin{itemize}
+                                                                    \item Architected and built a client-side data ingestion agent in Golang deployed on hospital machines, using secure gRPC connections to a Scala backend on AWS (PostgreSQL).
+                                                                        \item Implemented scheduled SQL query execution via cron over secure channels to extract data from Epic Clarity database instances on hospital networks.
+                                                                            \item Enhanced ETL and data pipelines by contributing to Spark jobs on Amazon EMR in Scala---ramping up in an unfamiliar language and codebase under tight timelines.
+                                                                            \end{itemize}
+
+                                                                            \vspace{6pt}
+
+                                                                            % --- Picwell ---
+                                                                            \textbf{\large Picwell} \hfill Remote \\
+                                                                            \textbf{Back-End Developer} \hfill Mar 2021 -- Oct 2022
+                                                                            \begin{itemize}
+                                                                                \item \textbf{Directly Responsible Individual (DRI)} for multiple high-impact projects: FSA in Health Recommendations, Full Online Calculator for DX, and FBS Recommendations---owning scope, design, implementation, and delivery.
+                                                                                    \item \textbf{Designed and led Project Circe} (10 months): migrated client configuration from static files to database-driven management, improving scalability and operational efficiency.
+                                                                                        \item Led the BenAdmin Integration project with partner Bentek, coordinating cross-team deliverables on a tight timeline.
+                                                                                            \item Took ownership of backlog management and team organization, improving sprint planning and task prioritization.
+                                                                                                \item Introduced Mypy type checking across the Commercial API codebase, improving code quality and reducing runtime errors.
+                                                                                                    \item Collaborated with data scientists to maintain and improve the core recommendation engine and modeling framework.
+                                                                                                        \item Improved service infrastructure alongside SRE using AWS, Datadog, and CircleCI.
+                                                                                                        \end{itemize}
+                                                                                                        
+                                                                                                        \vspace{6pt}
+                                                                                                        
+                                                                                                        % --- ECFMG ---
+                                                                                                        \textbf{\large ECFMG} \hfill Remote \\
+                                                                                                        \textbf{Software Development \& QA Co-Op} \hfill Mar 2020 -- Sep 2020
+                                                                                                        \begin{itemize}
+                                                                                                            \item Built and maintained Windows applications (C\#, VB) and web applications (ASP.NET, HTML, JavaScript).
+                                                                                                                \item Performed migration, system, and load testing; authored process documentation to support knowledge transfer.
+                                                                                                                \end{itemize}
+                                                                                                                
+                                                                                                                % ---------- EDUCATION ----------
+                                                                                                                \section{Education}
+                                                                                                                \textbf{Drexel University} --- Bachelor of Science, Computer Software Engineering \hfill 2016 -- 2021 \\
+                                                                                                                GPA: 3.5
+                                                                                                                
+                                                                                                                % ---------- PROJECTS & AWARDS ----------
+                                                                                                                \section{Selected Projects \& Awards}
+                                                                                                                \textbf{CHOP IPC Application} (Senior Design, Drexel University) \\
+                                                                                                                Infectious disease prevention and control mobile app for physicians at Children's Hospital of Philadelphia, built with Django and SQL. Won two Communicator Awards 2021 (Best Practices and Education for Mobile Apps/Sites) and 1st Place Humanitarian at Drexel CCI Senior Projects.
+                                                                                                                
+                                                                                                                \vspace{4pt}
+                                                                                                                \textbf{STAR Scholars Research} (Drexel University) \\
+                                                                                                                Selected for undergraduate research program; conducted biomedical informatics research analyzing social network interactions among smoking cessation patients using Java and D3.js.
+                                                                                                                
+                                                                                                                % ---------- CERTIFICATIONS ----------
+                                                                                                                \section{Certifications}
+                                                                                                                How to Use Roadmaps in JIRA --- Coursera (2022) \quad $\mid$ \quad Introduction to Claude Projects --- Codecademy (2025)
+                                                                                                                
+                                                                                                                \end{document}
