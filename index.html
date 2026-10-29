@@ -4,288 +4,210 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Abir Razzak — Software Engineer">
+    <meta name="author" content="Abir Razzak">
+    <meta name="theme-color" content="#e60012">
 
-    <title>Resume Abir Razzak</title>
+    <title>Abir Razzak</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Archivo+Black&family=Barlow:ital,wght@0,400;0,600;0,800;1,400&family=Bodoni+Moda:wght@700;900&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="css/resume.min.css" rel="stylesheet">
+    <link href="css/persona.css" rel="stylesheet">
 
   </head>
 
   <body id="page-top">
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">
-        <span class="d-block d-lg-none">Abir Razzak</span>
-        <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+    <a class="skip-link" href="#about">Skip to content</a>
+
+    <!-- Pause-menu style navigation -->
+    <header class="p5-nav" id="sideNav">
+      <a class="p5-nav__brand" href="#about">
+        <span class="p5-nav__portrait">
+          <img src="img/profile.jpg" alt="Portrait of Abir Razzak">
         </span>
+        <span class="p5-nav__name" data-ransom>Abir Razzak</span>
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+
+      <button class="p5-nav__toggle" type="button" aria-controls="p5Menu" aria-expanded="false">
+        <span class="p5-nav__toggle-bar"></span>
+        <span class="p5-nav__toggle-bar"></span>
+        <span class="p5-nav__toggle-bar"></span>
+        <span class="visually-hidden">Toggle menu</span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-          </li> -->
+
+      <nav class="p5-menu" id="p5Menu" aria-label="Main">
+        <ul>
+          <li><a href="#about" data-sub="Status">About</a></li>
+          <li><a href="#experience" data-sub="Confidants">Experience</a></li>
+          <li><a href="#education" data-sub="Stats">Education</a></li>
+          <li><a href="#contact" data-sub="Calling Card">Contact</a></li>
         </ul>
+      </nav>
+
+      <div class="p5-nav__social">
+        <a href="https://github.com/AbirRazzak" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/abirrazzak/" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://abirrazzak.wordpress.com/" target="_blank" rel="noopener" title="Blog"><i class="fab fa-wordpress"></i></a>
       </div>
-    </nav>
+    </header>
 
-    <div class="container-fluid p-0">
+    <main>
 
-      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
-        <div class="my-auto">
-          <h1 class="mb-0">Abir
-            <span class="text-primary">Razzak</span>
+      <!-- ABOUT -->
+      <section class="p5-section p5-section--hero" id="about">
+        <div class="p5-shard p5-shard--a" aria-hidden="true"></div>
+        <div class="p5-shard p5-shard--b" aria-hidden="true"></div>
+        <div class="p5-star p5-star--a" aria-hidden="true"></div>
+        <div class="p5-star p5-star--b" aria-hidden="true"></div>
+
+        <div class="p5-hero">
+          <p class="p5-kicker reveal">Software Engineer</p>
+          <h1 class="p5-hero__name reveal">
+            <span class="p5-hero__line" data-ransom>Abir</span>
+            <span class="p5-hero__line p5-hero__line--alt" data-ransom>Razzak</span>
           </h1>
-          <div class="subheading mb-5">
-            Philadelphia, PA · <a href="mailto:abir@drexel.edu">abir@drexel.edu</a>
+
+          <div class="p5-tag reveal">
+            <i class="fas fa-location-dot"></i> Philadelphia, PA
+            <span class="p5-tag__sep">/</span>
+            <a href="mailto:abir@drexel.edu">abir@drexel.edu</a>
           </div>
-          <p class="lead mb-5">Software Engineering student at Drexel University interested in cross-disciplinary studies, social technology, and project management. Currently in my last year for the Bachelor of Science Degree program at Drexel's College of Computing and Informatics.</p>
-          <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="abirrazzak"><a class="LI-simple-link" href='https://www.linkedin.com/in/abirrazzak?trk=profile-badge'>Abir Razzak</a></div>
-          <br>
-          <div class="social-icons">
-            <a href="https://github.com/AbirRazzak" target="_blank" title="Abir Razzak's GitHub Profile">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/abirrazzak/" target="_blank" title="Abir Razzak's LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://abirrazzak.wordpress.com/" target="_blank" title="Abir Razzak's Personal Blog">
-              <i class="fab fa-wordpress"></i>
-            </a>
-            <!--<a href="#">
-              <i class="fab fa-facebook-f"></i>
-            </a>-->
+
+          <div class="p5-dialog reveal">
+            <span class="p5-dialog__speaker">Abir</span>
+            <div class="p5-dialog__body">
+              <p>Software Engineering student at Drexel University interested in cross-disciplinary studies, social technology, and project management. Currently in my last year for the Bachelor of Science Degree program at Drexel's College of Computing and Informatics.</p>
+            </div>
+            <span class="p5-dialog__next" aria-hidden="true"></span>
           </div>
+
+          <div class="p5-social reveal">
+            <a href="https://github.com/AbirRazzak" target="_blank" rel="noopener" title="Abir Razzak's GitHub Profile">
+              <i class="fab fa-github"></i><span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/abirrazzak/" target="_blank" rel="noopener" title="Abir Razzak's LinkedIn">
+              <i class="fab fa-linkedin-in"></i><span>LinkedIn</span>
+            </a>
+            <a href="https://abirrazzak.wordpress.com/" target="_blank" rel="noopener" title="Abir Razzak's Personal Blog">
+              <i class="fab fa-wordpress"></i><span>Blog</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="p5-hero__portrait reveal" aria-hidden="true">
+          <img src="img/profile.jpg" alt="">
         </div>
       </section>
 
-      <hr class="m-0">
+      <!-- EXPERIENCE -->
+      <section class="p5-section p5-section--dark" id="experience">
+        <header class="p5-heading reveal">
+          <span class="p5-heading__sub">Confidants</span>
+          <h2 data-ransom>Experience</h2>
+        </header>
 
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-        <div class="my-auto">
-          <h2 class="mb-5">Experience</h2>
-          
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Engineer & QA Combo Co-Op</h3>
-              <div class="subheading mb-3">Educational Commission for Foreign Medical Graduates (ECFMG)</div>
-              <p>
-                • Built & maintained Windows applications using C# and VB (Visual Basic) to handle foreign medical graduates information <br>
-                • Maintained 10+ external-facing web pages via ASP.Net, HTML, & JavaScript addressing user bugs & monthly maintenance efforts <br>
-                • Performed QA tasks such as migration testing, system testing, & load testing for VM upgrades, developer changes, & general maintenance<br>
-                • Documented reoccurring company processes in an effort aid knowledge transfers & overall wiki documentation <br>
-                • Worked as part of the Solution Delivery team in the Information Technology department consisting of members from the U.S. and India <br>
-              </p>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"><p>March 2020 - September 2020</p><p>Remote</p></span>
-            </div>
-          </div>
+        <div class="p5-cards">
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Co-Op Applications Engineer</h3>
-              <div class="subheading mb-3">Oracle Corporation</div>
-              <p>Half-year exposure to large scale corporate systems and processes as part of the Construction and Engineering Global Business Unit (CEGBU), working on the cloud-integrated buisness management software known as Oracle Prime. Primarily used the Oracle stack for server-side development and database management. Utilized Java for the back-end server-side logic, Oracle SQL for relational databases, and Javascript for all front-end development work. </p>
+          <article class="p5-card reveal">
+            <div class="p5-card__inner">
+              <span class="p5-card__arcana" aria-hidden="true">I</span>
+              <div class="p5-card__meta">
+                <span>March 2020 &ndash; September 2020</span>
+                <span>Remote</span>
+              </div>
+              <h3>Software Engineer &amp; QA Combo Co-Op</h3>
+              <p class="p5-card__org">Educational Commission for Foreign Medical Graduates (ECFMG)</p>
+              <ul class="p5-list">
+                <li>Built &amp; maintained Windows applications using C# and VB (Visual Basic) to handle foreign medical graduates information</li>
+                <li>Maintained 10+ external-facing web pages via ASP.Net, HTML, &amp; JavaScript addressing user bugs &amp; monthly maintenance efforts</li>
+                <li>Performed QA tasks such as migration testing, system testing, &amp; load testing for VM upgrades, developer changes, &amp; general maintenance</li>
+                <li>Documented reoccurring company processes in an effort aid knowledge transfers &amp; overall wiki documentation</li>
+                <li>Worked as part of the Solution Delivery team in the Information Technology department consisting of members from the U.S. and India</li>
+              </ul>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"><p>September 2018 - April 2019</p><p>Conshohoken, PA</p></span>
-            </div>
-          </div>
+          </article>
 
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Software Developer (C#) Co-Op & Part-time</h3>
-              <div class="subheading mb-3">Susquehanna International Group, LLP (SIG)</div>
+          <article class="p5-card reveal">
+            <div class="p5-card__inner">
+              <span class="p5-card__arcana" aria-hidden="true">II</span>
+              <div class="p5-card__meta">
+                <span>September 2018 &ndash; April 2019</span>
+                <span>Conshohocken, PA</span>
+              </div>
+              <h3>Co-Op Applications Engineer</h3>
+              <p class="p5-card__org">Oracle Corporation</p>
+              <p>Half-year exposure to large scale corporate systems and processes as part of the Construction and Engineering Global Business Unit (CEGBU), working on the cloud-integrated business management software known as Oracle Prime. Primarily used the Oracle stack for server-side development and database management. Utilized Java for the back-end server-side logic, Oracle SQL for relational databases, and JavaScript for all front-end development work.</p>
+            </div>
+          </article>
+
+          <article class="p5-card reveal">
+            <div class="p5-card__inner">
+              <span class="p5-card__arcana" aria-hidden="true">III</span>
+              <div class="p5-card__meta">
+                <span>September 2017 &ndash; September 2018</span>
+                <span>Bala Cynwyd, PA</span>
+              </div>
+              <h3>Software Developer (C#) Co-Op &amp; Part-time</h3>
+              <p class="p5-card__org">Susquehanna International Group, LLP (SIG)</p>
               <p>Worked 6 months as a full-time Co-Op, and 6 months as a part-time employee while taking classes. Member of the Derivatives Team at Susquehanna Financial Group (SFG) at SIG's headquarters in Bala Cynwyd. Full-stack development using the Microsoft stack and Oracle SQL. Created Windows applications, ASP.NET websites and web-applications, and Powershell scripts and services. Also worked with REST API and automation development on the Atlassian stack (Jira, Confluence, Fisheye + Crucible) to automate internal work flows. Followed Microsoft's standards for GUI full-stack development such as MVVM, MVC, and MVP.</p>
             </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary"><p>September 2017 - September 2018</p><p>Bala Cynwyd, PA</p></span>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="p5-section p5-section--red" id="education">
+        <header class="p5-heading p5-heading--inverse reveal">
+          <span class="p5-heading__sub">Stats</span>
+          <h2 data-ransom>Education</h2>
+        </header>
+
+        <div class="p5-cards">
+          <article class="p5-card p5-card--light reveal">
+            <div class="p5-card__inner">
+              <span class="p5-card__arcana" aria-hidden="true"><i class="fas fa-graduation-cap"></i></span>
+              <div class="p5-card__meta">
+                <span>September 2016 &ndash; June 2021</span>
+                <span>Philadelphia, PA</span>
+              </div>
+              <h3>Drexel University</h3>
+              <p class="p5-card__org">Bachelor of Science &ndash; Software Engineering</p>
+              <ul class="p5-list">
+                <li>Transferred in from Computer Science in Year 3</li>
+                <li>College of Computing &amp; Informatics</li>
+              </ul>
             </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="p5-section p5-section--dark p5-section--contact" id="contact">
+        <div class="p5-calling-card reveal">
+          <div class="p5-calling-card__inner">
+            <p class="p5-calling-card__eyebrow">Calling Card</p>
+            <h2 data-ransom>Let's Talk</h2>
+            <p>Have a project, a role, or just want to say hi? Send word and I'll answer the call.</p>
+            <a class="p5-button" href="mailto:abir@drexel.edu"><span>Send a message</span></a>
+            <p class="p5-calling-card__sign">&mdash; Abir Razzak</p>
           </div>
-
-        </div>
-
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-        <div class="my-auto">
-          <h2 class="mb-5">Education</h2>
-
-          <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="resume-content mr-auto">
-              <h3 class="mb-0">Drexel University</h3>
-              <div class="subheading mb-3">Bachelor of Science - Software Engineering</div>
-              <div>Transferred in from Computer Science in Year 3</div>
-              <div>College of Computing & Informatics</div>
-            </div>
-            <div class="resume-date text-md-right">
-              <span class="text-primary">September 2016 - June 2021</span>
-            </div>
-          </div>
-
         </div>
       </section>
 
-      <hr class="m-0">
+    </main>
 
-      <!-- <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
-        <div class="my-auto">
-          <h2 class="mb-5">Skills</h2>
+    <footer class="p5-footer">
+      <span>&copy; Abir Razzak</span>
+      <span class="p5-footer__hint">Take your time.</span>
+    </footer>
 
-          <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-          <ul class="list-inline dev-icons">
-            <li class="list-inline-item">
-              <i class="fab fa-html5"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-css3-alt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-js-square"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-angular"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-react"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-node-js"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-sass"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-less"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-wordpress"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-gulp"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-grunt"></i>
-            </li>
-            <li class="list-inline-item">
-              <i class="fab fa-npm"></i>
-            </li>
-          </ul>
-
-          <div class="subheading mb-3">Workflow</div>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Cross Functional Teams</li>
-            <li>
-              <i class="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum</li>
-          </ul>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="interests">
-        <div class="my-auto">
-          <h2 class="mb-5">Interests</h2>
-          <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.</p>
-          <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
-        </div>
-      </section>
-
-      <hr class="m-0">
-
-      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
-        <div class="my-auto">
-          <h2 class="mb-5">Awards &amp; Certifications</h2>
-          <ul class="fa-ul mb-0">
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Pennsylvania Free Enterprise Week - Entrepreneurship Boot-Camp Graduation Certificate</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2009</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition 2008</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006</li>
-            <li>
-              <i class="fa-li fa fa-trophy text-warning"></i>
-              3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005</li>
-          </ul>
-        </div>
-      </section>
- -->
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/resume.min.js"></script>
-    
-    <!-- LinkedIn Badge -->
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+    <script src="js/persona.js"></script>
 
   </body>
 
