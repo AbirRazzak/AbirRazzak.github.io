@@ -217,6 +217,7 @@ a {
 .p5-menu li:nth-child(2) { padding-left: 1.2rem; }
 .p5-menu li:nth-child(3) { padding-left: 0.4rem; }
 .p5-menu li:nth-child(4) { padding-left: 1.8rem; }
+.p5-menu li:nth-child(5) { padding-left: 0.8rem; }
 
 .p5-menu a {
   position: relative;
@@ -660,11 +661,11 @@ main,
   padding: 2.4rem 2.4rem 2rem 2.4rem;
   background: var(--ink);
   border: 4px solid var(--white);
-  clip-path: polygon(0 3%, 99% 0, 100% 96%, 1.5% 100%);
+  clip-path: polygon(0 16px, 99% 0, 100% calc(100% - 18px), 1.5% 100%);
 }
 
 .p5-card:nth-child(even) .p5-card__inner {
-  clip-path: polygon(1% 0, 100% 4%, 98.5% 100%, 0 97%);
+  clip-path: polygon(1% 0, 100% 18px, 98.5% 100%, 0 calc(100% - 14px));
 }
 
 .p5-card__arcana {
@@ -759,6 +760,59 @@ main,
   clip-path: polygon(50% 0, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
+/* Multiple roles at one company */
+.p5-roles {
+  margin-top: 1.4rem;
+  border-left: 4px solid var(--red);
+  padding-left: 1.4rem;
+}
+
+.p5-role + .p5-role {
+  margin-top: 1.6rem;
+}
+
+.p5-role__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.p5-role__head h4 {
+  position: relative;
+  margin: 0;
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: 1.3rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* marker sitting on the timeline */
+.p5-role__head h4::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.4rem - 12px);
+  top: 0.3em;
+  width: 20px;
+  height: 20px;
+  background: var(--white);
+  border: 4px solid var(--red);
+  transform: rotate(45deg);
+}
+
+.p5-role__date {
+  padding: 0 0.6em;
+  background: var(--red);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transform: skewX(-12deg);
+}
+
 /* light variant for use on red backgrounds */
 .p5-card--light {
   filter: drop-shadow(12px 12px 0 var(--black));
@@ -773,6 +827,65 @@ main,
 .p5-card--light .p5-card__meta span:first-child {
   background: var(--black);
   color: var(--white);
+}
+
+/* ------------------------------------------------------------------ */
+/* Skills                                                              */
+/* ------------------------------------------------------------------ */
+
+.p5-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2.4rem 2rem;
+  max-width: 1080px;
+}
+
+.p5-skill {
+  padding: 1.8rem 1.5rem 1.5rem;
+  background: var(--black);
+  clip-path: polygon(0 4%, 100% 0, 97% 100%, 3% 96%);
+}
+
+.p5-skill:nth-child(even) {
+  clip-path: polygon(3% 0, 97% 5%, 100% 96%, 0 100%);
+}
+
+.p5-skill h3 {
+  display: inline-block;
+  margin: 0 0 1rem;
+  padding: 0 0.5em;
+  background: var(--white);
+  color: var(--black);
+  font-family: var(--font-display);
+  font-weight: normal;
+  font-size: 1.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transform: rotate(-3deg) skewX(-10deg);
+}
+
+.p5-skill ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.p5-skill li {
+  padding: 0.15em 0.7em;
+  border: 2px solid var(--white);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transform: skewX(-10deg);
+  transition: background 0.15s ease, color 0.15s ease, transform 0.2s var(--pop);
+}
+
+.p5-skill li:hover {
+  background: var(--red);
+  border-color: var(--red);
+  transform: skewX(-10deg) rotate(-4deg) scale(1.08);
 }
 
 /* ------------------------------------------------------------------ */
